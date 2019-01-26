@@ -24,3 +24,22 @@ function inputForm() {
     document.getElementById("inpExperience").value = experience;
     document.getElementById("inpEmail").value = email;
 }
+
+function saveInput() {
+    form.style.display = "none";
+    var name = document.getElementById("inpName").value;
+    var role = document.getElementById("inpRole").value;
+    var availability = document.getElementById("inpAvailability").value;
+    var age = document.getElementById("inpAge").value;
+    var location = document.getElementById("inpLocation").value;
+    var experience = document.getElementById("inpExperience").value;
+    var email = document.getElementById("inpEmail").value;
+
+    document.getElementById("pName").innerHTML = name;
+    document.getElementById("pRole").innerHTML = role;
+    document.getElementById("pAvailability").innerHTML = availability;
+    document.getElementById("pAge").innerHTML = age;
+    document.getElementById("pLocation").innerHTML = location;
+    document.getElementById("pExperience").innerHTML = experience;
+    document.getElementById("pEmail").innerHTML = email;
+}
