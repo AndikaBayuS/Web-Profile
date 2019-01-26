@@ -10,7 +10,7 @@ function inputForm() {
 
     var name = document.getElementById("pName").innerHTML;
     var role = document.getElementById("pRole").innerHTML;
-    var experience = document.getElementById("pAvailability").innerHTML;
+    var availability = document.getElementById("pAvailability").innerHTML;
     var age = document.getElementById("pAge").innerHTML;
     var location = document.getElementById("pLocation").innerHTML;
     var experience = document.getElementById("pExperience").innerHTML;
@@ -18,7 +18,7 @@ function inputForm() {
 
     document.getElementById("inpName").value = name;
     document.getElementById("inpRole").value = role;
-    document.getElementById("inpAvailability").value = experience;
+    document.getElementById("inpAvailability").value = availability;
     document.getElementById("inpAge").value = age;
     document.getElementById("inpLocation").value = location;
     document.getElementById("inpExperience").value = experience;
