@@ -26,31 +26,31 @@
             <div class="photo" style="background-image: url(assets/img/profile_img.jpg);"></div>
         </div>
         <div class="description">
-            <h1>Andika Bayu Santoso</h1>
-            <p>Student</p>
-            <a href="#" class="button bg-blue">Contact</a>
+            <h1 id="pName">Andika Bayu Santoso</h1>
+            <p id="pRole">Student</p>
+            <a href="#input-form" class="button bg-blue" onclick="inputForm()">Edit</a>
             <a href="#" class="button border-blue">Resume</a>
         </div>
         <div class="information">
             <div class="data">
                 <p class="field">Availability</p>
-                <p class="text-gray">Part Time</p>
+                <p class="text-gray" id="pAvailability">Part Time</p>
             </div>
             <div class="data">
                 <p class="field">Age</p>
-                <p class="text-gray">17</p>
+                <p class="text-gray" id="pAge">17</p>
             </div>
             <div class="data">
                 <p class="field">Location</p>
-                <p class="text-gray">Purwokerto,Jawa Tengah</p>
+                <p class="text-gray" id="pLocation">Purwokerto,Jawa Tengah</p>
             </div>
             <div class="data">
                 <p class="field">Years Experience</p>
-                <p class="text-gray">1</p>
+                <p class="text-gray" id="pExperience">1</p>
             </div>
             <div class="data">
                 <p class="field">Email</p>
-                <p class="text-gray">andika.bayu.s2001@gmail.com</p>
+                <p class="text-gray" id="pEmail">andika.bayu.s2001@gmail.com</p>
             </div>
         </div>
     </section>
@@ -60,39 +60,40 @@
         <form action="#">
             <div class="form">
                 <label>Name</label>
-                <input type="text" name="name">
+                <input type="text" name="name" id="inpName">
             </div>
             <div class="form">
                 <label>Role</label>
-                <input type="text" name="role">
+                <input type="text" name="role" id="inpRole">
             </div>
             <div class="form">
                 <label>Availability</label>
-                <input type="text" name="availability">
+                <input type="text" name="availability" id="inpAvailability">
             </div>
             <div class="form">
                 <label>Age</label>
-                <input type="number" name="age">
+                <input type="number" name="age" id="inpAge">
             </div>
             <div class="form">
                 <label>Location</label>
-                <input type="text" name="location">
+                <input type="text" name="location" id="inpLocation">
             </div>
             <div class="form">
                 <label>Years Experience</label>
-                <input type="number" name="years">
+                <input type="number" name="years" id="inpExperience">
             </div>
             <div class="form">
                 <label>Email</label>
-                <input type="email" name="email">
+                <input type="email" name="email" id="inpEmail">
             </div>
             <div class="form">
-                <input class="bg-blue" type="submit" name="submit" value="Submit">
+                <input class="bg-blue" type="submit" name="submit" value="Submit" onclick="saveInput()">
             </div>
         </form>
     </section>
 
     <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/form.js"></script>
 </body>
 
 </html>
